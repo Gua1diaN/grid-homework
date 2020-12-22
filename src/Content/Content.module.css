@@ -1,0 +1,41 @@
+.container{
+    display: grid;
+    grid-template-rows: 48px 1fr 128px;
+    grid-template-columns: 272px 1fr;
+    grid-template-areas: "topTitle top"
+                         "menu content"
+                         "botTitle bot";
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark-grey);
+  }
+
+  .topTitle{
+    grid-area: topTitle;
+    background-color: var(--dark-grey-two);
+  }
+
+  .top{
+    grid-area: top;
+    background-color: var(--dark-grey-two);
+  }
+
+  .menu{
+    grid-area: menu;
+    background-color: var(--dark-grey-two);
+  }
+
+  .content{
+    grid-area: content;
+    background-color: var(--dark-grey-two);
+  }
+
+  .botTitle{
+    grid-area: botTitle;
+    background-color: var(--dark-grey-two);
+  }
+
+  .bot{
+    grid-area: bot;
+    background-color: var(--dark-grey-two);
+  }
